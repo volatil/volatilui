@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+		<title>Drop</title>
+
+		<script src="volatilui.js"></script>
+	</head>
+	<body>
+		<br><br><br><br>
+		<div class="jeje">
+			<h1>OPCIONES</h1>
+			<div class="random"></div>
+			<script type="text/javascript">
+				const optionsrandom = ["Shaggy", "Se parece", "JAJAJAJA", 1989, "Sofi"];
+				dropdown({
+					id: "random0138" ,
+					options: optionsrandom ,
+					valorinicial: "Options Random" ,
+					donde: ".random"
+				});
+			</script>
+		</div>
+		<br><br><br><br>
+		<section class="algo">
+			<table>
+				<tbody>
+					<tr>
+						<td>Deporte</td>
+						<td>
+							<div class="losdeportes"></div>
+							<script type="text/javascript">
+								const losdeportes = ["Futbol", "Tenis", "Basketball", "Volleyball", "Surf", "Skate"];
+								dropdown({
+									donde: ".losdeportes" ,
+									id: "deportes0114" ,
+									options: losdeportes ,
+									valorinicial: "Selecciona tu deporte favorito"
+								});
+							</script>
+						</td>
+					</tr>
+					<tr>
+						<td>Pizza</td>
+						<td>
+							<div class="losingredientes"></div>
+							<script type="text/javascript">
+								const data = ["Masa", "Queso", "Choclito", "Salsa de tomate"];
+								dropdown({ donde: ".losingredientes", id:"deporte0117", valorinicial: "Ingredientes de pizza", options: data });
+							</script>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section class="otrascosas">
+			<ul>
+				<li>
+					<div class="cositaspc" style="width: 200px;"></div>
+				</li>
+			</ul>
+			<script type="text/javascript">
+				const laspiezas = ["MOBO", "Ram", "SSD", "Refrigeración", "Fuente de Poder", "GPU", "CPU"];
+				dropdown({
+					id: "pc0126" ,
+					options: laspiezas ,
+					donde: ".cositaspc" ,
+					valorinicial: "Piezas PC" ,
+				});
+			</script>
+		</section>
+	</body>
+</html>
