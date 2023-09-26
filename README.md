@@ -1,8 +1,7 @@
-# VolatilUI
+# VolatilUI (v0.1)
 
-v0.1
-
-## Uso
+## DROPDOWN
+### Uso
 
 ```javascript
 dropdown({
@@ -13,7 +12,7 @@ dropdown({
 })
 ```
 
-## Ejemplo
+### Ejemplo
 
 ```javascript
 dropdown({
@@ -25,7 +24,35 @@ dropdown({
 ```
 
 
-## Usado por
+
+
+
+## TOOLTIP
+### Uso
+
+```javascript
+tooltip({
+	donde: {clase o id donde se imprimira la data} ,
+	id: {nombre identificador, no debe repetirse} ,
+	direccion: {direccion en la que se desplegara el mensaje del tooltip} ,
+	mensaje: {mensaje visible} ,
+	mensajetooltip: {mensaje del globito} ,
+});
+```
+
+### Ejemplo
+
+```javascript
+tooltip({
+	donde: ".eltooltip",
+	id: "identificador1353" ,
+	direccion: "derecha" ,
+	mensaje: "sobre mi" ,
+	mensajetooltip: "hola !" ,
+});
+```
+
+### Usado por
 
 Este proyecto es utilizado por las siguientes empresas:
 

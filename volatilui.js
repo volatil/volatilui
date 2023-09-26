@@ -101,3 +101,95 @@ const dropdown = function({ donde, id, valorinicial, options }) {
 	});
 };
 
+const tooltip = function({ donde, id, direccion, mensaje, mensajetooltip }) {
+	$(`${donde}`).html(`
+		<div data-id="${id}">
+			<style type="text/css">
+				[data-id=${id}] {
+					position: relative;
+					display: inline-block;
+					border-bottom: 1px dotted #ccc;
+					color: #006080;
+				}
+				[data-id=${id}] .eltooltiptext {
+					visibility: hidden;
+					position: absolute;
+					width: 120px;
+					background-color: #555;
+					color: #fff;
+					text-align: center;
+					padding: 5px 0;
+					border-radius: 6px;
+					z-index: 1;
+					opacity: 0;
+					transition: opacity 0.3s;
+				}
+				[data-id=${id}]:hover .eltooltiptext {
+					visibility: visible;
+					opacity: 1;
+				}
+				.tooltip-derecha {
+					top: -5px;
+					left: 125%;
+				}
+				.tooltip-derecha::after {
+					content: "";
+					position: absolute;
+					top: 50%;
+					right: 100%;
+					margin-top: -5px;
+					border-width: 5px;
+					border-style: solid;
+					border-color: transparent #555 transparent transparent;
+				}
+				.tooltip-abajo {
+					top: 135%;
+					left: 50%;
+					margin-left: -60px;
+				}
+				.tooltip-abajo::after {
+					content: "";
+					position: absolute;
+					bottom: 100%;
+					left: 50%;
+					margin-left: -5px;
+					border-width: 5px;
+					border-style: solid;
+					border-color: transparent transparent #555 transparent;
+				}
+				.tooltip-arriba {
+					bottom: 125%;
+					left: 50%;
+					margin-left: -60px;
+				}
+				.tooltip-arriba::after {
+					content: "";
+					position: absolute;
+					top: 100%;
+					left: 50%;
+					margin-left: -5px;
+					border-width: 5px;
+					border-style: solid;
+					border-color: #555 transparent transparent transparent;
+				}
+				.tooltip-izquierda {
+					top: -5px;
+					bottom:auto;
+					right: 128%;
+				}
+				.tooltip-izquierda::after {
+					content: "";
+					position: absolute;
+					top: 50%;
+					left: 100%;
+					margin-top: -5px;
+					border-width: 5px;
+					border-style: solid;
+					border-color: transparent transparent transparent #555;
+				}
+			</style>
+			${mensaje}
+			<span class="eltooltiptext tooltip-${direccion}">${mensajetooltip}</span>
+		</div>
+	`);
+};
