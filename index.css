@@ -1,0 +1,148 @@
+index.css@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --montserrat: 'Montserrat', sans-serif !important;
+    --naranjo: #ff3c00;
+    --opacidad-label: .6;
+}
+* {
+    font-family: var( --montserrat );
+}
+.lasetiquetas {
+    color: white;
+    background-color: #011627;
+    padding: 10px;
+    resize: none;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    resize: none;
+}
+
+
+
+
+
+
+div[ data-tag="inputradio" ] {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+div[ data-tag="inputradio" ][ data-disabled="true" ] {
+    opacity: var( --opacidad-label );
+}
+div[ data-tag="inputradio" ] input {
+    display: none;
+}
+div[ data-tag="inputradio" ] .circulo {
+    --medida: 15px;
+    position: relative;
+    background: white;
+    border: 1px solid var( --naranjo );
+    width: var( --medida );
+    height: var( --medida );
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+div[ data-tag="inputradio" ].activo .circulo > span {
+    --medida: 40%;
+    position: absolute;
+    background: var( --naranjo );
+    border-radius: 50%;
+    width: var( --medida );
+    height: var( --medida );
+    padding: 10%;
+}
+div[ data-tag="inputradio" ] label {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+div[ data-tag="inputcheckbox" ] {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+div[ data-tag="inputcheckbox" ][ data-disabled="true" ] {
+    opacity: var( --opacidad-label );
+}
+div[ data-tag="inputcheckbox" ] input {
+    display: none;
+}
+div[ data-tag="inputcheckbox" ] .circulo {
+    --medida: 15px;
+    position: relative;
+    background: white;
+    border: 1px solid var( --naranjo );
+    width: var( --medida );
+    height: var( --medida );
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+div[ data-tag="inputcheckbox" ].activo .circulo > span {
+    --medida: 40%;
+    position: absolute;
+    background: var( --naranjo );
+    border-radius: 50%;
+    width: var( --medida );
+    height: var( --medida );
+    padding: 10%;
+}
+div[ data-tag="inputcheckbox" ] p {
+    position: relative;
+    top: -2px;
+    margin: 0;
+    cursor: pointer;
+}
+
+
+
+
+
+div[ data-tag="inputtext" ] {
+    --ancho: 100%;
+    --alto: 30px;
+    position: relative;
+    margin: 10px 0;
+}
+div[ data-tag="inputtext" ]:focus-within input {
+    border: 1px solid var( --naranjo );
+}
+div[ data-tag="inputtext" ][ data-disabled="true" ] {
+    background-color: #ddd;
+    opacity: var( --opacidad-label );
+}
+div[ data-tag="inputtext" ] > input {
+    width: calc( var( --ancho ) - 20px );
+    height: var( --alto );
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    padding: 11px 8px 5px;
+}
+div[ data-tag="inputtext" ] > label {
+    position: absolute;
+    top: calc( var( --alto ) / 8 );
+    left: 10px;
+    font-size: .7em;
+    color: #888;
+}
+
+

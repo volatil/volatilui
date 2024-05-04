@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BL <labels></title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+
+    <h1>UI Buscalibre Lables </h1>
+    
+    <section>
+        <h2>Input Radio</h2>
+        <div>
+            <bl-inputradio id="opcion1" name="test" value="opcion multiple 1"></bl-inputradio>
+            <bl-inputradio id="opcion2" name="test" value="opcion multiple 2" checked="true" ></bl-inputradio>
+            <bl-inputradio id="opcion3" name="test" value="opcion multiple 3"></bl-inputradio>
+            <bl-inputradio id="opcion4" name="test" value="opcion multiple 4" disabled="true"></bl-inputradio>
+        </div>
+        <textarea class="lasetiquetas">
+<bl-inputradio id="opcion1" name="test" value="opcion multiple 1"></bl-inputradio>
+<bl-inputradio id="opcion2" name="test" value="opcion multiple 2" checked="true" ></bl-inputradio>
+<bl-inputradio id="opcion3" name="test" value="opcion multiple 3"></bl-inputradio>
+<bl-inputradio id="opcion4" name="test" value="opcion multiple 4" disabled="true"></bl-inputradio>
+        </textarea>
+    </section>
+
+    <br /><br />
+
+    <section>
+        <h2>Input Checkbox</h2>
+        <div>
+            <bl-inputcheckbox id="soyunico1" value="soy unico 1" checked="true" ></bl-inputcheckbox>
+            <bl-inputcheckbox id="soyunico2" value="soy unico 2"></bl-inputcheckbox>
+            <bl-inputcheckbox id="soyunico2" value="Estoy Disabled uwu" disabled="true"></bl-inputcheckbox>
+            <bl-inputcheckbox id="soyunico2" value="Estoy Disabled pero checked" checked="true" disabled="true"></bl-inputcheckbox>
+        </div>
+    </section>
+    
+    <br /><br />
+    
+    <section>
+        <h2>Input Text</h2>
+        <div>
+            <bl-inputtext placeholder="Nombre"></bl-inputtext>
+            <bl-inputtext placeholder="Nombre" value="Paulo Torrealba"></bl-inputtext>
+            <bl-inputtext placeholder="Apellido" ></bl-inputtext>
+            <bl-inputtext placeholder="Apellido Disabled" disabled="true"></bl-inputtext>
+        </div>
+    </section>
+    
+  </body>
+</html>
