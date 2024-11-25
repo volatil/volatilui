@@ -1,6 +1,6 @@
 {
   "name": "volatilui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple UI library for React",
   "main": "Labels.js",
   "keywords": [
@@ -10,7 +10,7 @@
     "Components",
     "VolatilUI",
     "Volatil"
-],
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,7 +23,7 @@
     "email": "contacto@volatil.cl",
     "url": "https://volatil.cl",
     "github": "https://www.linkedin.com/in/pauloguajardo/"
-},
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/volatil/volatilui/issues"
