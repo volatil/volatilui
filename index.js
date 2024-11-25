@@ -1,5 +1,6 @@
-import laslabels from "./Labels";
-import pizza from "./lib/pizza";
+// index.js
+function saludar(nombre) {
+    return `¡Hola, ${nombre}! Bienvenido a mi paquete de npm.`;
+}
 
-const { Button, Input, Textarea } = laslabels;
-export { pizza, Button, Input, Textarea }
+module.exports = saludar;
