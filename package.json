@@ -1,8 +1,8 @@
 {
   "name": "volatilui",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple UI library for React",
-  "main": "Labels.js",
+  "main": "index.js",
   "keywords": [
     "React",
     "UI",
