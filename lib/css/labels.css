@@ -31,11 +31,11 @@ BUTTON
 INPUTS => TEXT
 ====================================
 */
-div.campo {
+div.elcampo {
    background-color: #fff;
    position: relative;
 }
-div.campo input {
+div.elcampo input {
    width: 100%;
    height: 40px;
    background: transparent;
@@ -46,7 +46,7 @@ div.campo input {
    position: relative;
    z-index: 2;
 }
-div.campo label {
+div.elcampo label {
    position: absolute;
    cursor: text;
    z-index: 1;
@@ -59,24 +59,24 @@ div.campo label {
    color: #999;
    transition: all .3s ease;
 }
-div.campo input:focus + label,
-div.campo input:disabled + label,
-div.campo input:valid + label {
+div.elcampo input:focus + label,
+div.elcampo input:disabled + label,
+div.elcampo input:valid + label {
    font-size: 11px;
    top: -5px;
    z-index: 3;
 }
-div.campo input:focus + label {
+div.elcampo input:focus + label {
    color: var( --azul );
 }
-div.campo input:focus {
+div.elcampo input:focus {
    border-color: var( --azul );
    outline: 1px solid var( --azul );
 }
-div.campo input:disabled + label {
+div.elcampo input:disabled + label {
     background-color: var( --grisClaro );
 }
-div.campo input:disabled {
+div.elcampo input:disabled {
     background-color: var( --grisClaro );
     cursor: no-drop;
 }
@@ -120,7 +120,7 @@ INPUTS => FILE
 TEXTAREA
 ====================================
 */
-div.campo textarea {
+div.elcampo textarea {
     --elpadding: 14px;
     width: 100%;
     background: transparent;
@@ -134,24 +134,24 @@ div.campo textarea {
     /* min-height: 100px; */
     height: 100%;
 }
-div.campo textarea:focus + label,
-div.campo textarea:disabled + label,
-div.campo textarea:valid + label {
+div.elcampo textarea:focus + label,
+div.elcampo textarea:disabled + label,
+div.elcampo textarea:valid + label {
     font-size: 11px;
     top: -5px;
     z-index: 3;
 }
-div.campo textarea:focus + label {
+div.elcampo textarea:focus + label {
     color: var( --azul );
 }
-div.campo textarea:focus {
+div.elcampo textarea:focus {
     border-color: var( --azul );
     outline: 1px solid var( --azul );
 }
-div.campo textarea:disabled + label {
+div.elcampo textarea:disabled + label {
     background-color: var( --grisClaro );
 }
-div.campo textarea:disabled {
+div.elcampo textarea:disabled {
     background-color: var( --grisClaro );
     cursor: no-drop;
 }
