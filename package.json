@@ -1,8 +1,8 @@
 {
   "name": "volatilui",
-  "version": "1.0.5",
+  "version": "1.0.32",
   "description": "A simple UI library for React",
-  "main": "index.js",
+  "main": "lib/index.js",
   "keywords": [
     "React",
     "UI",
@@ -12,7 +12,8 @@
     "Volatil"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir lib"
   },
   "repository": {
     "type": "git",
@@ -28,5 +29,13 @@
   "bugs": {
     "url": "https://github.com/volatil/volatilui/issues"
   },
-  "homepage": "https://github.com/volatil/volatilui#readme"
+  "homepage": "https://github.com/volatil/volatilui#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0"
+  }
 }

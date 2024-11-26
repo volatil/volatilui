@@ -1,8 +1,14 @@
-# mi-paquete
+# Volatil UI
 
-Este paquete es un ejemplo que exporta una función para saludar.
+A simple UI library for React.
 
 ## Instalación
 
 ```bash
-npm install mi-paquete
+npm i volatilui
+
+```bash
+npm run build
+
+```bash
+npm publish
