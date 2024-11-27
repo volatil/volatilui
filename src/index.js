@@ -1,6 +1,6 @@
-import Saludar from "./lib/Saludar";
 import Button from "./lib/Button";
 import Textarea from "./lib/Textarea";
 import Input from "./lib/Input";
+import Select from "./lib/Select";
 
-export { Saludar, Button, Textarea, Input };
+export { Button, Textarea, Input, Select };

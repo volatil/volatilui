@@ -155,3 +155,130 @@ div.elcampo textarea:disabled {
     background-color: var( --grisClaro );
     cursor: no-drop;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+====================================
+SELECT
+====================================
+*/
+.elselect {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+.elselect > .principal {
+    position: relative;
+    border: 1px solid #bbb;
+    height: 40px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.elselect > .principal > .label {
+    position: absolute;
+    top: -9px;
+    background: white;
+    left: 10px;
+    font-size: 0.7em;
+    padding: 0 8px;
+}
+.elselect > .principal > .option {
+    margin-left: 10px;
+}
+.elselect > .principal > .arrow {
+    width: 30px;
+}
+.elselect[ data-desplegado="false" ] > .options {
+    display: none;
+}
+.elselect[ data-desplegado="true" ] > .options {
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    margin-top: -1px;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+}
+.elselect > .options > .option {
+    cursor: pointer;
+    padding: 0 6px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition:    all 0.2s ease-out;
+    -o-transition:      all 0.2s ease-out;
+    transition:         all 0.2s ease-out;
+}
+.elselect > .options > .option[ data-active="true" ] ,
+.elselect > .options > .option:hover {
+    background-color: whitesmoke;
+}
+.elselect > select {
+    display: none;
+}
