@@ -282,3 +282,141 @@ SELECT
 .elselect > select {
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+====================================
+CHECKBOX
+====================================
+*/
+.elcheckbox {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+.elcheckbox:hover {
+    opacity: .7;
+}
+.elcheckbox[ data-disabled="true" ] ,
+.elcheckbox[ data-disabled="true" ]:hover {
+    opacity: .5;
+}
+.elcheckbox > div {
+    width: 20px;
+}
+.elcheckbox > p {
+    font-size: .9em;
+}

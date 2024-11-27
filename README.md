@@ -90,6 +90,20 @@ Example:
 />
 ```
 
+### CHECKBOX
+📋 PARAMETERS
+```bash
+className, style, label, checked, disabled
+```
+
+Example:
+```bash
+<Checkbox label="Marcelo Salas" checked />
+<Checkbox label="Marcelo Diaz" />
+<Checkbox label="Johnny Herrera" disabled />
+<Checkbox label="Eduardo Vargas" disabled checked />
+```
+
 
 
 
