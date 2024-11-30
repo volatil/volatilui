@@ -34,7 +34,7 @@ export default function Select({ className, style, children, label }) {
     
     return (
         <>
-            <div className="elselect" onClick={ toggle } data-desplegado={ stateDesplegado }>
+            <div className={`elselect ${ className }`} onClick={ toggle } data-desplegado={ stateDesplegado } data-value={ stateOptionValue } data-option={ stateOption }>
                 <div className="principal">
                     <div className="label">{ label ? label : null }</div>
                     { children ? <div className="option" data-value={ stateOptionValue }>{ stateOption }</div> : null }

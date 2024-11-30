@@ -19,6 +19,7 @@ export default function Checkbox({ className="", style, label, checked, disabled
             className={`elcheckbox ${ className }`}
             style={ style }
             data-disabled={ disabled ? true : false }
+            data-checked={ stateChecked }
         >
             <div>{ stateChecked ? check.checked : check.uncheked }</div>
             <p>{ label }</p>

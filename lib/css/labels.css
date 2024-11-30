@@ -1,9 +1,10 @@
 
 /* 
-====================================
+============================================================================================================
 BUTTON
-====================================
+============================================================================================================
 */
+
 .elbutton {
     display: flex;
     align-items: center;
@@ -22,15 +23,12 @@ BUTTON
     height: 10px;
 }
 
-
-
-
-
 /* 
-====================================
+============================================================================================================
 INPUTS => TEXT
-====================================
+============================================================================================================
 */
+
 div.elcampo {
    background-color: #fff;
    position: relative;
@@ -82,10 +80,11 @@ div.elcampo input:disabled {
 }
 
 /* 
-====================================
+============================================================================================================
 INPUTS => FILE
-====================================
+============================================================================================================
 */
+
 .typefile > input {
     position: absolute;
     cursor: pointer;
@@ -95,31 +94,12 @@ INPUTS => FILE
     font-size: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 
-====================================
+============================================================================================================
 TEXTAREA
-====================================
+============================================================================================================
 */
+
 div.elcampo textarea {
     --elpadding: 14px;
     width: 100%;
@@ -156,68 +136,12 @@ div.elcampo textarea:disabled {
     cursor: no-drop;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 
-====================================
+============================================================================================================
 SELECT
-====================================
+============================================================================================================
 */
+
 .elselect {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -283,129 +207,17 @@ SELECT
     display: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 
-====================================
+============================================================================================================
 CHECKBOX
-====================================
+============================================================================================================
 */
+
 .elcheckbox {
     display: flex;
     gap: 10px;
     cursor: pointer;
+    align-items: center;
 }
 .elcheckbox:hover {
     opacity: .7;
@@ -416,7 +228,134 @@ CHECKBOX
 }
 .elcheckbox > div {
     width: 20px;
+    display: flex;
 }
 .elcheckbox > p {
     font-size: .9em;
+}
+
+/* 
+============================================================================================================
+RADIO
+============================================================================================================
+*/
+
+.elradio {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    cursor: pointer;
+}
+.elradio > div {
+    display: flex;
+    gap: 10px;
+}
+.elradio > div:hover {
+    opacity: .7;
+}
+.elradio > div > div {
+    width: 20px;
+}
+.elradio > div > p {
+    font-size: .9em;
+}
+
+/* 
+============================================================================================================
+MODAL
+============================================================================================================
+*/
+
+.themodal_bg[ data-visible="false" ] ,
+.themodal_content[ data-visible="false" ] {
+    display: none;
+}
+.themodal_bg {
+    background-color: black;
+    opacity: 75%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    cursor: pointer;
+}
+.themodal_content {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 60%;
+    z-index: 1000;
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition:    all 0.2s ease-out;
+    -o-transition:      all 0.2s ease-out;
+    transition:         all 0.2s ease-out;
+}
+.themodal_content > span {
+    font-size: 1.2em;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+    color: #bbb;
+}
+
+@media ( max-width: 800px ) {
+    .themodal_content {
+        width: 90%;
+    }
+}
+
+/* 
+============================================================================================================
+ACCORDION
+============================================================================================================
+*/
+
+.theaccordion {
+    --borderradius: 8px;
+}
+.theaccordion > .theaccordion-section {
+    border: 1px solid #bbb;
+    padding: 10px;
+}
+.theaccordion > .theaccordion-section:first-child {
+    border-top-right-radius: var( --borderradius );
+    border-top-left-radius: var( --borderradius );
+}
+.theaccordion > .theaccordion-section:last-child {
+    border-bottom-left-radius: var( --borderradius );
+    border-bottom-right-radius: var( --borderradius );
+}
+.theaccordion > .theaccordion-section > .theaccordion-title {
+    cursor: pointer;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+    .theaccordion > .theaccordion-section > .theaccordion-title:hover {
+        text-decoration: underline;
+    }
+.theaccordion > .theaccordion-section > .theaccordion-title > svg {
+    width: 14px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition:    all 0.2s ease-out;
+    -o-transition:      all 0.2s ease-out;
+    transition:         all 0.2s ease-out;
+}
+.theaccordion > .theaccordion-section.desplegar > .theaccordion-title > svg {
+    transform: rotate(180deg);
+}
+.theaccordion > .theaccordion-section > .theaccordion-content {
+    display: none;
+}
+.theaccordion > .theaccordion-section.desplegar > .theaccordion-content {
+    display: block;
+    margin-top: 20px;
 }

@@ -104,9 +104,102 @@ Example:
 <Checkbox label="Eduardo Vargas" disabled checked />
 ```
 
+### RADIO
+📋 PARAMETERS
+```bash
+className, style, labels, color_check, color_text
+```
 
+Example:
+```bash
+<Radio
+    className="theradio"
+    style={{ border: "1px solid #bbb" }}
+    labels={[ "Golf", "Futbol", "MMA", "Padel", "Tenis" ]}
+    color_text="blue"
+    color_check="blue"
+/>
+```
 
+### MODAL
+📋 PARAMETERS
+```bash
+classBg, classContent, styleBg, styleContent, children, visible, trigger
+```
 
+Example:
+```bash
+"use client";
+import { useState } from "react"
+
+export default function Test() {
+    const [ modalVisible, setmodalVisible ] = useState( false );
+    
+    const toggleModal = () => {
+        setmodalVisible( !modalVisible );
+    }
+    
+    <Modal visible={ modalVisible } trigger={ toggleModal }>
+        <h2>Random title</h2>
+        <p>ingredients:</p>
+        <ul>
+            <li>2 apples</li>
+            <li>1 banana</li>
+            <li>1lt milk</li>
+            <li>nuts</li>
+        </ul>
+    </Modal>
+    <Button onClick={ toggleModal }>Deploy Modal</Button>
+}
+```
+
+### ACCORDION
+📋 PARAMETERS
+```bash
+className, style
+```
+
+Example:
+```bash
+<Accordion>
+    <Accordion.Section>
+        <Accordion.Title>Is it accessible? <Svg icono="faq_arrow_down" color="#bbb" /></Accordion.Title>
+        <Accordion.Content>
+            <p>Yes. It adheres to the WAI-ARIA design pattern.</p>
+            <p>Yes. It adheres to the WAI-ARIA design pattern.</p>
+            <p>Yes. It adheres to the WAI-ARIA design pattern.</p>
+        </Accordion.Content>
+    </Accordion.Section>
+    
+    <Accordion.Section>
+        <Accordion.Title>Is it customizable? <Svg icono="faq_arrow_down" color="#bbb" /></Accordion.Title>
+        <Accordion.Content>
+            <p>Yes. You can customize it with your own styles.</p>
+        </Accordion.Content>
+    </Accordion.Section>
+    
+    <Accordion.Section>
+        <Accordion.Title>Is it responsive? <Svg icono="faq_arrow_down" color="#bbb" /></Accordion.Title>
+        <Accordion.Content>
+            <p>Yes. It's responsive by default, but you can disable it if you prefer.</p>
+        </Accordion.Content>
+    </Accordion.Section>
+    
+    <Accordion.Section>
+        <Accordion.Title>Is it styled? <Svg icono="faq_arrow_down" color="#bbb" /></Accordion.Title>
+        <Accordion.Content>
+            <p>Yes. It comes with default styles that match the other components' aesthetic.</p>
+        </Accordion.Content>
+    </Accordion.Section>
+    
+    <Accordion.Section>
+        <Accordion.Title>Is it animated? <Svg icono="faq_arrow_down" color="#bbb" /></Accordion.Title>
+        <Accordion.Content>
+            <p>Yes. It's animated by default, but you can disable it if you prefer.</p>
+        </Accordion.Content>
+    </Accordion.Section>
+</Accordion>
+```
 
 
 
