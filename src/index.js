@@ -7,5 +7,6 @@ import Checkbox from "./lib/Checkbox";
 import Radio from "./lib/Radio";
 import Modal from "./lib/Modal";
 import Accordion from "./lib/Accordion";
+import ScrollArea from "./lib/ScrollArea";
 
-export { Button, Textarea, Input, Select, Checkbox, Radio, Modal, Svg, Accordion };
+export { Button, Textarea, Input, Select, Checkbox, Radio, Modal, Svg, Accordion, ScrollArea };

@@ -359,3 +359,24 @@ ACCORDION
     display: block;
     margin-top: 20px;
 }
+
+/* 
+============================================================================================================
+SCROLL AREA
+============================================================================================================
+*/
+
+.thescrollarea {
+    height: 300px;
+    overflow: hidden;
+}
+.thescrollarea::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+.thescrollarea::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+.thescrollarea::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+}
