@@ -380,3 +380,44 @@ SCROLL AREA
 .thescrollarea::-webkit-scrollbar-thumb {
     border-radius: 6px;
 }
+
+/* 
+============================================================================================================
+SWITCH
+============================================================================================================
+*/
+
+.theswitch {
+    --medida: 20px;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    align-items: center;
+    user-select: none;
+}
+.theswitch > div {
+    background-color: #3d3d3d;
+    border: 1px solid #222;
+    width: calc( var( --medida ) * 2 );
+    border-radius: 20px;
+    padding: 2px;
+    position: relative;
+}
+.theswitch[ data-switch="true" ] > div {
+    background-color: whitesmoke;
+}
+.theswitch > div > span {
+    background-color: #222;
+    border-radius: 50%;
+    width: var( --medida );
+    height: var( --medida );
+    display: block;
+    position: relative;
+    background-color: white;
+}
+.theswitch[ data-switch="true" ] > div > span {
+    position: relative;
+    right: calc( var( --medida ) - 34px );
+    right: -40%;
+    background-color: black;
+}

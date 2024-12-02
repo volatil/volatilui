@@ -201,9 +201,14 @@ Example:
 </Accordion>
 ```
 
+### SWITCH
+📋 PARAMETERS
+```bash
+className, style, label, onClick
+```
 
-
-
-
-
-
+Example:
+```bash
+<Switch label="Darkmode" />
+<Switch label={["On", "Off"]} />
+```

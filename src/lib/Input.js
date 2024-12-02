@@ -1,6 +1,7 @@
 import "../css/labels.css"
 import Button from "./Button";
-import Svg from "../components/Svg";
+// import Svg from "../components/SvgA";
+import Svg from "./Svg";
 
 export default function Input({ onChange = () => {}, style={}, className="", label, value, type = "text", accept="image/png, image/jpeg", disabled, nombrearchivo }) {
     return (
